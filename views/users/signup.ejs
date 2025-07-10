@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>signup-form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<link rel="stylesheet" href="sigupPage/css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+				<h2></h2>
+				<% if (error && error.length > 0) { %>
+  					<div style="color: red;"><%= error %></div>
+				<% } %>
+                <form action="/signup" method="POST">
+					<div class="inner">
+						<div class="image-holder">
+							<img style="height: 100%; width: 500px;" src="sigupPage/images/xyz2.avif" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Please fill with your details</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="username" placeholder="Your Name" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="email" name="email" placeholder="Your Email" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="password" name="password" placeholder="Password" class="form-control">
+								</div>  
+								<div class="form-holder">
+									<input type="text" name="phonenumber" placeholder="Phone Number" class="form-control">
+								</div>                          
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="number" name="age" placeholder="Age" class="form-control">
+								</div>
+							</div>
+							<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+								<div class="checkbox-tick">
+									<label class="male">
+										<input type="radio" name="gender" value="male" checked> Male
+										<span class="checkmark"></span>
+									</label>
+									<label class="female">
+										<input type="radio" name="gender" value="female"> Female
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<button style="margin-top: 50px;" type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+
+
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="../public/sigupPage/js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
