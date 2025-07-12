@@ -72,15 +72,6 @@ app.use("/", userRouter); //POST request for signup
 
 app.use("/main",mainRoute);
 
-app.all('*', (req, res, next) => {
-  next(new ExpressError(404, 'Page Not Found!'));
-});
-
-app.use((err, req, res, next) => {
-  let { statusCode = 500, message = 'something went wrong!' } = err;
-  res.status(statusCode).render('error.ejs', { message });
-});
-
 
 app.listen(PORT, () => {
     console.log(`✅ Server live on http://localhost: ${PORT}`);
