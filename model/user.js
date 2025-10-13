@@ -1,3 +1,4 @@
+// user schema is defined 
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
