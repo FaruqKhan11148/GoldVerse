@@ -1,4 +1,4 @@
-// these are some route for each different process
+// these are some route for each different processes
 const User = require('../model/user');
 
 module.exports.renderSignupForm = (req, res) => {
