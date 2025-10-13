@@ -37,6 +37,7 @@ module.exports.login = async (req, res) => {
   res.redirect(redirectUrl);
 };
 
+// route for logout
 module.exports.logout = (req, res, next) => {
   req.logout((err) => {
     if (err) {
