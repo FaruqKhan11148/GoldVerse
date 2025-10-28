@@ -24,7 +24,10 @@ module.exports.signup = async (req, res) => {
   }
 };
 
-
+// route for login form rendering
+module.exports.renderLoginForm = (req, res) => {
+  res.render('users/login');
+};
 
 // route for login form
 module.exports.login = async (req, res) => {
