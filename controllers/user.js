@@ -2,7 +2,7 @@
 const User = require('../model/user');
 
 module.exports.renderSignupForm = (req, res) => {
-  res.render('users/signup.ejs');
+  
 };
 
 // route export for signup
