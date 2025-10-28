@@ -14,8 +14,7 @@ module.exports.signup = async (req, res) => {
     const registeredUser = await User.register(newUser, password);
     console.log("User saved:", registeredUser); 
 
-    req.flash('success', 'Account created! Please login');
-    res.redirect('/login');
+    
     
   } catch (e) {
     console.log("Signup error:", e);
