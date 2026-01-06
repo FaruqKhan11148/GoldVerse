@@ -18,7 +18,6 @@ module.exports.signup = async (req, res) => {
     res.redirect('/login');
     
   } catch (e) {
-    console.log("Signup error:", e);
     req.flash('error', e.message);
     res.redirect('/signup');
   }
