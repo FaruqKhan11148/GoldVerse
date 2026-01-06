@@ -13,7 +13,7 @@ module.exports.signup = async (req, res) => {
     const newUser = new User({ username, email, phone, age, gender });
     const registeredUser = await User.register(newUser, password);
     console.log("User saved:", registeredUser); 
-
+    res.redirect('/login');
     req.flash('success', 'Account created! Please login');
     
   } catch (e) {
