@@ -30,7 +30,7 @@ module.exports.renderLoginForm = (req, res) => {
 // route for login form
 module.exports.login = async (req, res) => {
   req.flash('success', 'Welcom back to Fetify!');
-  let redirectUrl = res.locals.redirectUrl || '/main';
+  
   res.redirect(redirectUrl);
 };
 
